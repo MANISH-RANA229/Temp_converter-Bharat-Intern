@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <!-- Add a div to act as the container for the video -->
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="winter-lantern.1920x1080.mp4" type="video/mp4"> <!-- Replace 'your_video_filename.mp4' with your video filename -->
+            
+        </video>
+       
+    </div>
+    <form id="tempCalc" onsubmit="calculateTemp();return false">
+
+        <label for="temp"> Enter the Temperature to convert</label>
+        <br />
+        <input type="number" name="temp" id="temp">
+
+        <select name="temp_diff" id="temp_diff">
+            <option value="cel">°Celsius</option>
+            <option value="fah">°Fahrenheit</option>
+        </select> <br />
+        <input type="submit" name="temp"><br />
+        <span id="resultContainer"></span>
+    </form>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
